@@ -53,7 +53,7 @@ ul {
     height: var(--header-hight);
 }
 
-.header__img {
+.logo {
     position: relative;
     top: 5px;
 }
@@ -177,6 +177,7 @@ ul {
 .listen-on__links {
     display: flex;
     gap: 17px;
+    flex-wrap: wrap;
 }
 
 .blue-button {
@@ -375,6 +376,35 @@ ul {
 
 .review__star {
     display: none;
+}
+
+.footer {
+    background-color: var(--grey);
+    padding: 100px 50px;
+}
+
+.footer__content {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block__tittle {
+    display: none;
+}
+
+.block__ul {
+    transition: 0.3s;
+}
+
+.block__li {
+    margin: 10px 0;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.block__li:hover {
+    color: #7a7a7a;
 }
 
 @import './media.scss';

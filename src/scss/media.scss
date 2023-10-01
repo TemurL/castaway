@@ -95,6 +95,18 @@
         padding: 40px;
     }
 
+    .footer__content {
+        flex-direction: column;
+    }
+    .block__tittle {
+        display: block;
+        font-size: 1.4rem;
+    }
+
+    .block {
+        width: max-content;
+        border-bottom: 1px solid #484848;
+    }
 }
 
 @media screen and (max-width: 450px) {
