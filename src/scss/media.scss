@@ -1,0 +1,142 @@
+@media screen and (max-width: 980px) {
+    .hero__img {
+        display: none;
+    }
+    .hero {
+        background-image: url('../img/IMAGE-HERO.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.727);
+        background-blend-mode: overlay;
+        margin: 0;
+        text-shadow: 0 0 2px #FFF;
+    }
+    .episode-card__img {
+        display: none;
+    }
+
+    .episodes__tittle {
+        margin-block: 1rem;
+        font-size: 2.3rem;
+        line-height: 1.5rem;
+    }
+
+    .sub-form__content {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .sub-form__tittle {
+        margin-bottom: 30px;
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .reviews__content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    html {
+        --header-hight: 80px;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .mob-menu__body {
+        display: block;
+    }
+
+    .mob-menu__btn {
+        display: block;
+        position: relative;
+        height: 20px;
+        aspect-ratio: 2/1;
+    }   
+    
+    .hero__tittle {
+        margin: 3rem 0;
+    }
+    .listen-on {
+        margin-bottom: 60px;
+    }
+
+    .worker__content {
+        margin-block: 3rem;
+    }
+
+    .worker__text {
+        padding: 0;
+        width: auto;
+    }
+    .worker__img {
+        display: none;
+    }
+
+    .sub-form__content > img {
+        left: -10px;
+    }
+
+    .reviews__content {
+        grid-template-columns: 1fr;
+    }
+
+    .review {
+        padding: 40px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    html {
+        --header-hight: 80px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .tittle {
+        font-size: 2rem;
+        letter-spacing: normal;
+        line-height: 3rem;
+    }
+    .hero__tittle {
+        margin: 2rem 0;
+        text-shadow: none;
+        font-weight: 800;
+    }
+
+    .episode-card {
+        padding-inline: 20px;
+    }
+
+    .sub-form__content {
+        padding-inline: 20px;
+    }
+    .sub-form__input {
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .sub-form__content > img {
+        width: 20%;
+        left: -5px;
+        bottom: -15px;
+    }
+
+    .review {
+        padding: 40px 20px;
+    }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.min.css">
+        <title>Castaway</title>
+    </head>
+    <body class="body">
+        <div class="wrapper">
+            @@include('./html/header.html')
+            <main class="main" id="main">
+                <section class="hero section">
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="hero__img"><img src="./img/IMAGE-decor-hero.svg" alt=""></div>
+                            <div class="hero__text">
+                                <h2 class="tittle hero__tittle">Take your <br> podcast to the <br> next <b>level</b></h2>
+                                <div class="listen-on hero__listen-on">
+                                    <p class="listen-on__tittle">Listen on</p>
+                                    <ul class="listen-on__links">
+                                        <li><a href=""><img class="listen-on__img" src="./img/icons/IMAGE-ICON-4.svg" alt="spotify"></a></li>
+                                        <li><a href=""><img class="listen-on__img" src="./img/icons/IMAGE-ICON.svg" alt="roomer"></a></li>
+                                        <li><a href=""><img class="listen-on__img" src="./img/icons/IMAGE-ICON-2.svg" alt="soundcloud"></a></li>
+                                        <li><a href=""><img class="listen-on__img" src="./img/icons/IMAGE-ICON-1.svg" alt="podcasts"></a></li>
+                                        <li><a href=""><img class="listen-on__img" src="./img/icons/IMAGE-ICON-3.svg" alt="servis"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="episodes" id="episodes">
+                    <div class="container">
+                        <div class="episodes__head">
+                            <h2 class="tittle episodes__tittle">Latest episodes</h2>
+                            <button class="blue-button episodes__blue-button">View all episodes</button>
+                        </div>
+                        <div class="episodes__body">
+                            <div class="episode-card episodes__episode-card">
+                                <div class="episode-card__img"><img src="./img/cards/IMAGE-mixer.png" alt="mixer"></div>
+                                <div class="episode-card__text">
+                                    <span class="episode-card__topic">Gear</span>
+                                    <span class="accent-text episode-card__accent-text">Episode 3</span>
+                                    <h2 class="tittle episode-card__tittle">Should you get <br> outboard audio gear?</h2>
+                                    <p class="parag episode-card__parag">Is hardware really worth it when it comes to podcasting? The answer is...it depends. Here’s our reasons on why you might want to consider picking something up.</p>
+                                    <button class="blue-button episode-card__button">View Episode Details</button>
+                                </div>
+                            </div>
+                            <div class="episode-card episodes__episode-card">
+                                <div class="episode-card__img"><img src="./img/cards/IMAGE-mic.png" alt="mic"></div>
+                                <div class="episode-card__text">
+                                    <span class="episode-card__topic">Tips & Tricks</span>
+                                    <span class="accent-text episode-card__accent-text">Episode 2</span>
+                                    <h2 class="tittle episode-card__tittle">Mic tricks to take <br> you to the next level</h2>
+                                    <p class="parag episode-card__parag">Stop rolling with those default settings on your mic. These small tweaks will take you from sounding good to great.</p>
+                                    <button class="blue-button episode-card__button">View Episode Details</button>
+                                </div>
+                            </div>
+                            <div class="episode-card episodes__episode-card">
+                                <div class="episode-card__img"><img src="./img/cards/IMAGE-dictor.png" alt="dictor"></div>
+                                <div class="episode-card__text">
+                                    <span class="episode-card__topic">Gear</span>
+                                    <span class="accent-text episode-card__accent-text">Episode 1</span>
+                                    <h2 class="tittle episode-card__tittle">The best microphone <br> under $200</h2>
+                                    <p class="parag episode-card__parag">With so many microphones on the market, how are you supposed to know what’s the best? Take a look at our top picks.</p>
+                                    <button class="blue-button episode-card__button">View Episode Details</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="worker" id="about">
+                    <div class="container">
+                        <div class="worker__content">
+                            <div class="worker__text">
+                                <a href="https://www.google.com.tr/?hl=tr" class="worker__link">
+                                    <img src="./img/Frame-arrow.png" alt="arrow" class="worker__arrow-img">
+                                    <span class="accent-text">Meet your host</span>
+                                </a>
+                                <h2 class="tittle worker__tittle">Jacob Paulaner</h2>
+                                <p class="parag worker__parag">
+                                    Jacob has a background in audio engineering, and has been podcasting since the early days.
+                                </p>
+                                <p class="parag worker__parag">
+                                    He’s here to help you level up your game by sharing everything he’s learned along the way.
+                                </p>
+                            </div>
+                            <div class="worker__img"></div>
+                        </div>
+                    </div>
+                </section>
+                <section class="sub-form" id="contact">
+                    <div class="container">
+                        <div class="sub-form__content">
+                            <img src="./img/IMAGE-decor-form.svg" alt="">
+                            <div class="sub-form__left">
+                                <span class="accent-text">Email Newsletter</span>
+                                <h2 class="tittle sub-form__tittle">Subscribe <br> for updates</h2>
+                            </div>
+                            <div class="sub-form__right">
+                                <form action="" class="sub-form__form">
+                                    <input type="text" placeholder="Name" class="sub-form__input">
+                                    <input type="email" placeholder="Email" class="sub-form__input">
+                                    <button class="blue-button sub-form__button">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="reviews">
+                    <div class="container">
+                        <div class="reviews__content">
+                            @@include('./html/review.html', {
+                                'user': 'Betty Lacey',
+                                'review-text': 'I can’t recommend this podcast enough',
+                                'rate': '3'
+                            })
+                            @@include('./html/review.html', {
+                                'user': 'Adam Driver',
+                                'review-text': 'Jacob is the best in the business',
+                                'rate': '5'
+                            })
+                            @@include('./html/review.html', {
+                                'user': 'Marcus Brown',
+                                'review-text': 'A wealth of audio knowledge',
+                                'rate': '4'
+                            })
+                            @@include('./html/review.html', {
+                                'user': 'Scott Adams',
+                                'review-text': 'Whoa whoa, let me take some notes!',
+                                'rate': '4'
+                            })
+                            @@include('./html/review.html', {
+                                'user': 'Jessica Knowl',
+                                'review-text': 'Every episode is a gem!',
+                                'rate': '2'
+                            })
+                            @@include('./html/review.html', {
+                                'user': 'Steven Blast',
+                                'review-text': 'I’ve upped my game considerably since I started listening',
+                                'rate': '5'
+                            })
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
