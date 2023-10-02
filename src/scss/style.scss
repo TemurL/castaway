@@ -10,6 +10,7 @@ html {
 
     background-color:var(--grey);
     scroll-behavior: smooth;
+    scroll-padding-top: var(--header-hight);
     background-image: url('../img/html-back.png');
     background-size: 800px;
 }
