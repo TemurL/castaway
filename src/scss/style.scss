@@ -10,15 +10,16 @@ html {
 
     background-color:var(--grey);
     scroll-behavior: smooth;
-    scroll-padding-top: var(--header-hight);
+    scroll-padding-top: calc(var(--header-hight) + 15px);
     background-image: url('../img/html-back.png');
     background-size: 800px;
 }
 body {
     margin: 0;
 }
-.body_scroll-lock {
-    overflow: hidden;
+.scroll-lock {
+    overflow: clip;
+    display: flow-root;
 }
 a {
     text-decoration: none;
@@ -179,6 +180,7 @@ ul {
     display: flex;
     gap: 17px;
     flex-wrap: wrap;
+    margin-top: 0;
 }
 
 .blue-button {
@@ -373,6 +375,11 @@ ul {
 .review__stars {
     display: flex;
     gap: 10px;
+    transition: 0.3s;
+}
+
+.review__stars_hover {
+    gap: 14px;
 }
 
 .review__star {
@@ -397,6 +404,7 @@ ul {
 
 .block__ul {
     transition: 0.3s;
+    margin-top: 0;
 }
 
 .block__li {
