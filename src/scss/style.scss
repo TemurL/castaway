@@ -1,18 +1,23 @@
 @import 'fonts.scss';
 
+:root {
+    --accent-color: #118DA8;
+    --grey: #191919;
+    --header-hight: 120px;
+    --back-position: 0px;
+}
+
+
 html {
     font-family: 'DMSans', sans-serif;
     color: white;
     font-size: 22px;
-    --accent-color: #118DA8;
-    --grey: #191919;
-    --header-hight: 120px;
-
     background-color:var(--grey);
     scroll-behavior: smooth;
     scroll-padding-top: calc(var(--header-hight) + 15px);
     background-image: url('../img/html-back.png');
     background-size: 800px;
+    background-position-y: var(--back-position);
 }
 body {
     margin: 0;

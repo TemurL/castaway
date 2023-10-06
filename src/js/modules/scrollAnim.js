@@ -1,8 +1,1 @@
-const html = document.getElementsByTagName('html')[0];
-
-const scrollAnim = () => {
-    let value = scrollY / 2;
-    html.style.backgroundPositionY = `${value}px`;
-}
-
-window.addEventListener('scroll', scrollAnim)
+window.addEventListener('scroll', () => document.children[0].style.setProperty('--back-position', `${scrollY / 2}px`));
