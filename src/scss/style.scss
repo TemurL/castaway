@@ -5,7 +5,6 @@
     --grey: #191919;
     --header-hight: 120px;
     --back-position: 0px;
-    --inline-link-color: #727272; 
 }
 
 
@@ -44,7 +43,7 @@ ul {
     margin: 15px 0;
 }
 .inline-link {
-    color: var(--inline-link-color);
+    color: var(--accent-color);
     text-decoration: underline;
 }
 .inline-link:hover {
@@ -380,7 +379,7 @@ ul {
 }
 
 .user-email {
-    color: #777777;
+    color: var(--accent-color);
 }
 
 .sub-form__img {
