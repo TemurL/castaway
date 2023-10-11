@@ -26,6 +26,10 @@
         flex-direction: column;
         gap: 0;
     }
+    .sub-form__main-content {
+        flex-direction: column;
+        gap: 0;
+    }
 
     .sub-form__tittle {
         margin-bottom: 30px;
@@ -41,7 +45,7 @@
 
 @media screen and (max-width: 767px) {
 
-    html {
+    :root {
         --header-hight: 80px;
     }
 
@@ -110,11 +114,6 @@
 }
 
 @media screen and (max-width: 450px) {
-
-    html {
-        --header-hight: 80px;
-    }
-
     .container {
         padding: 0 15px;
     }
@@ -146,6 +145,10 @@
         width: 20%;
         left: -5px;
         bottom: -15px;
+    }
+
+    .sub-form__img {
+        display: none;
     }
 
     .review {
